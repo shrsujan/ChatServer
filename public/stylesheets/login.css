@@ -1,0 +1,13 @@
+.loginBox{
+	width: 30%;
+	height: auto;
+	margin: 0 auto;
+	padding-top: 5%;
+}
+
+.signupBox{
+	width: 30%;
+	height: auto;
+	margin: 0 auto;
+	margin-top: -25px;
+}

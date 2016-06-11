@@ -1,0 +1,34 @@
+.ui-main
+	.signupBox
+		h1 SignUp
+		div(ng-cloak='')
+			md-content(class="bg-transparent")
+			form(name="signupForm" ng-submit="signup(signupForm.$valid)" novalidate autocomplete="off") 
+				div(layout-gt-sm='row')
+					md-input-container(flex='' class="flex_input")
+						label First Name
+						input(type='text' ng-model="signupInfo.first_name" required)
+				div(layout-gt-sm='row')
+					md-input-container(flex='' class="flex_input")
+						label Last Name
+						input(type='text' ng-model="signupInfo.last_name" required)
+				div(layout-gt-sm='row')
+					md-input-container(flex='' class="flex_input")
+						label Email
+						input(type='email' ng-model="signupInfo.email" required)
+				div(layout-gt-sm='row')
+					md-input-container(flex='' class="flex_input")
+						label Phone
+						input(type='text' ng-model="signupInfo.phone" required)
+				div(layout-gt-sm='row')
+					md-input-container(flex='' class="flex_input")
+						label Username
+						input(type='text' ng-model="signupInfo.username" required)
+				div(layout-gt-sm='row')
+					md-input-container(flex='' class="flex_input")
+						label Password
+						input(type='password' ng-model="signupInfo.password" required)
+				div(layout-gt-sm='row')
+					md-button(class="md-raised center-box" type="submit" ng-disabled="signupForm.$invalid") SignUp
+					span Already a user? 
+						a(ui-sref="login") Login

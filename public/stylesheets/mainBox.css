@@ -1,0 +1,56 @@
+.mainBox {
+	margin: 0 auto;
+	padding: 0;
+	height: 580px;
+}
+
+.displayBox{
+	height: 522px;
+	margin: 5px;
+	background-color: rgba(0,0,0,0.1);
+	overflow: auto;
+	box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.inputBox{
+	animation-name: flipInX;
+	animation-duration: 1s;
+	height: 43px;
+	margin: 0 5px 5px 5px;
+	/*background-color: rgba(0,0,0,0.1);*/
+}
+
+.displayBox li{
+	list-style-type: none;
+	font-size: 14px;
+	color: #fff;
+	padding: 10px;
+}
+
+.inputBox input[type='text']{
+	width: 88%;
+	height: 40px;
+}
+
+.inputBox input[type='submit']{
+	width: 8%;
+	height: 40px;
+	padding: 0px;
+	margin: 0px;
+}
+
+.displayBox li.my-msg{
+	background-color: rgba(012,123,234,0.7);
+	border-radius: 10px;
+	margin:10px;
+	clear: both;
+	box-shadow: 0 1px 10px rgba(0,0,0,0.5);
+}
+
+.displayBox li.others-msg{
+	background-color: rgba(0,128,128,0.7);
+	border-radius: 10px;
+	margin:10px;
+	clear: both;
+	box-shadow: 0 1px 10px rgba(0,0,0,0.5);
+}

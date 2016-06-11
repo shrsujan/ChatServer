@@ -1,0 +1,18 @@
+.ui-main
+	.loginBox
+		h1 Login
+		div(ng-cloak='')
+			md-content(class="bg-transparent")
+			form(name="loginForm" ng-submit="login(loginForm.$valid)" novalidate autocomplete="off") 
+				div(layout-gt-sm='row')
+					md-input-container(flex='' class="flex_input")
+						label Username/Email
+						input(type='text' ng-model="loginInfo.username" required)
+				div(layout-gt-sm='row')
+					md-input-container(flex='' class="flex_input")
+						label Password
+						input(type='password' ng-model="loginInfo.password" required)
+				div(layout-gt-sm='row')
+					md-button(class="md-raised center-box" type="submit" ng-disabled="loginForm.$invalid") Login
+					span Not a user? 
+						a(ui-sref="signup") SignUp

@@ -1,0 +1,28 @@
+.header
+    .left-content
+        ul
+            li(id="menuBtn")
+                span(class="glyphicon glyphicon-th-list")
+            li(ui-sref="home.chatBox")
+                span(class="logo-text") ChatBox
+    .right-content
+        ul.pull-right
+            li(id="yo")
+                span(class="glyphicon glyphicon-pause")
+            li(ui-sref="home")
+                span(class="glyphicon glyphicon-home")
+            li(id="setting")
+                span(class="glyphicon glyphicon-cog")
+                .setting-menu
+                    ul
+                        li Preferences
+                        li(ng-click="logout()") Logout
+.container-fluid
+    .menu
+        #menu
+            ul
+                li(ui-sref="home.chatBox") Public
+                li(ng-repeat="user in connectedUsers" ui-sref="home.privateChat({username:user})") {{user}}
+    .maincontainer
+        div(ui-view="def")
+    .setting
